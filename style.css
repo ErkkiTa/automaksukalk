@@ -1,0 +1,36 @@
+
+body {
+    background-color: #f4f4f4;
+  }
+  
+form {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 550px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h1 {
+  color: #555;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+input[type="button"] {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#result {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2em;
+}

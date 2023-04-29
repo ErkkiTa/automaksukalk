@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automaksu kalkulaator</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <h1>Automaksu kalkulaator</h1>
+    <form>
+      <fieldset>
+        <legend>Sisesta auto andmed:</legend>
+        <p>
+          <label for="co2">Auto CO2 näit (g/km):</label>
+          <input type="number" id="co2" name="co2" min="0">
+          <a href="https://eteenindus.mnt.ee/public/soidukTaustakontroll.jsf?lang=et">Kust saan auto co2 näidu?</a>
+        </p>
+        <p>
+          <label for="kutusetuup">Kütuse tüüp:</label>
+          <select id="kutusetuup" name="kutusetuup">
+            <option value="diisel">Diisel</option>
+            <option value="bensiin">Bensiin</option>
+            <option value="gaas">Gaas</option>
+          </select>
+        </p>
+        <p>
+          <input type="button" value="Arvuta automaks" onclick="calculateTax()">
+        </p>
+      </fieldset>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
